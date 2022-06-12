@@ -1,0 +1,414 @@
+
+#logo {
+    width: 508px;
+    height: 50px;
+}
+
+.header {
+    display: grid;
+    min-height: 80px;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.nav_font {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #1A1A1A;
+}
+
+.button_header {
+    width: 110px;
+    height: 50px;
+    border: 1px solid #DA5D1A;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #DA5D1A;
+    background-color: #FFFFFF;
+}
+
+.button_header:hover {
+    background: rgb(227, 163, 67);
+}
+
+.button_header:active {
+    background: rgb(232, 141, 221);
+    box-shadow: 0 3px rgb(203, 139, 237) inset;
+}
+
+.sct1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../assets/images/Rectangle\ 218.png");
+    height: 707px;
+    /* width: 1480px; */
+    /* left: 60px; */
+    /* top: 147px; */
+    border-radius: 5px;
+    margin: 0 80px 0 80px;
+    display: grid;
+}
+
+.sct1_gr1 {
+    padding: 100px 0 0 150px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr 2fr;
+    height: 80%;
+}
+
+.sct1_gr1_font1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    background: linear-gradient(270deg, #DA5D1A 0%, #FF7D38 97.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sct1_gr1_font2 {
+    font-family: 'Kayak Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 61px;
+    color: #010405;
+}
+
+.sct1_gr1_font3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 150%;
+    color: #6B6867;
+}
+
+.sct1_img {
+    padding: 30px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-image: url("../assets/images/sct1_img.png");
+    width: 552px;
+    height: 500px;
+    justify-self: end;
+    background-color: rgba(251, 127, 255, 0.2);
+    border-radius: 15px;
+}
+
+.sct1_img_a1 {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.sct1_img_a2 {
+    grid-area: 2 / 5 / 4 / 7;
+}
+
+.sct1_img_a3 {
+    grid-area: 5 / 4 / 7 / 7;
+}
+
+.sct1_gr1_btn {
+    width: 151px;
+    height: 57.83px;
+    background: #DA5D1A;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.sct2 {
+    padding: 20px 50px 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.sct2_1 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.sct2_1_font1 {
+    font-family: 'Kayak Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    text-align: center;
+    color: #0A0603;
+}
+
+.sct2_1_font2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #6B6867;
+}
+
+.sct2_2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.sct2_2_font1 {
+    font-family: 'Kayak Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 140%;
+    text-align: center;
+    color: #0A0603;
+}
+
+.sct2_2_font2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #6B6867;
+}
+
+.sct2_3 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.sct2_4 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.sct2_5 {
+    grid-area: 3 / 1 / 4 / 4;
+    justify-self: center;
+    align-self: center;
+}
+
+.sct2_btn {
+    width: 136px;
+    height: 57px;
+    left: 732px;
+    top: 1537px;
+    background: #DA5D1A;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.sct3 {
+    padding: 15px 50px 0 50px;
+    display: grid;
+    grid-gap: 15px;
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.sct3_1 {
+    grid-area: 1 / 1 / 3 / 3;
+    background-image: url("../assets/images/1st_image.png");
+}
+
+/* тут и в картинках ниже в этом блоке я специально оставила их повторяющимися и растянутыми на весь экран, потому что не нашла, как сделать, чтобы картинка растягивалась, а если они все будут реального размера, то блок получается некрасивый и маленький по размеру */
+
+.sct3_2 {
+    grid-area: 1 / 3 / 2 / 6;
+    background-image: url("../assets/images/2nd_image.png");
+}
+
+.sct3_3 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url("../assets/images/3rd_image.png");
+}
+
+.sct3_4 {
+    grid-area: 2 / 4 / 3 / 6;
+    background-image: url("../assets/images/4th_image.png");
+}
+
+.sct4 {
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+}
+
+.sct4_gr1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sct4_gr1_area1 {
+    grid-area: 1 / 1 / 2 / 4;
+    align-self: center;
+    font-family: 'Kayak Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    color: #0A0603;
+}
+
+.sct4_gr1_area2 {
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.sct4_gr1_area2_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sct4_select {
+    width: 125px;
+    height: 44px;
+    left: 362px;
+    top: 2538px;
+    background: hwb(21 10% 15%);
+    border-radius: 5px;
+}
+
+.sct5 {
+    padding: 15px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    background-color: antiquewhite;
+    justify-items: center;
+}
+
+.sct5_font {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    text-align: center;
+    color: #0A0603;
+}
+
+.sct5_link:hover {
+    background-color: #e9ab8a;
+}
+
+.sct6 {
+    padding: 15px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.sct6_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid orange;
+    border-radius: 8px;
+}
+
+.sct6_grid_text {
+    padding-right: 10px;
+    align-self: center;
+}
+
+.sct6_grid_text_font {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    color: #010405;
+}
+
+.footer {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 250px;
+}
+
+.footer_area1 {
+    padding-left: 50px;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.footer_area1_font1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #6B6867;
+}
+
+.footer_area2 {
+    grid-area: 1 / 2 / 3 / 4;
+}
+
+.footer_area2_grid {
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px 30px 30px 30px;
+    align-items: center;
+    align-content: center;
+    justify-items: end;
+}
+
+.footer_area3 {
+    padding-left: 50px;
+    grid-area: 3 / 1 / 4 / 2;
+    align-self: center;
+}
+
+.footer_area3_font2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #6B6867;
+}
+
+.footer_area4 {
+    grid-area: 3 / 2 / 4 / 4;
+    width: 400px;
+    justify-self: end;
+}
+
+.footer_area4_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+}
+
+.a_footer:hover {
+    color: #DA5D1A;
+}
+
+.a_footer:active {
+    color: aquamarine;
+}

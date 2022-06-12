@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <!-- <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css"> -->
+    <style>
+        #logo {
+            /* width: 508px;
+            height: 50px; */
+        }
+
+        .header {
+            position: relative;
+            display: grid;
+            /* max-width: 100%; */
+            max-height: 100px;
+            grid-template-columns: 1fr 4fr;
+            /* grid-template-columns: repeat(5, 1fr); */
+            align-items: center;
+        }
+
+        .navigation {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .nav_font {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.5vw;
+            /* line-height: 150%; */
+            color: #1A1A1A;
+        }
+
+        .button_header {
+            max-width: 110px;
+            height: 50px;
+            border: 1px solid #DA5D1A;
+            border-radius: 5px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.5vw;
+            /* line-height: 150%; */
+            color: #DA5D1A;
+            background-color: #FFFFFF;
+        }
+
+        .button_header:hover {
+            background: rgb(227, 163, 67);
+        }
+
+        .button_header:active {
+            background: rgb(232, 141, 221);
+            box-shadow: 0 3px rgb(203, 139, 237) inset;
+        }
+
+        .section_1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-image: url("assets/images/Rectangle\ 218.png");
+            /* min-height: 707px; */
+            /* max-width: 1480px; */
+            /* left: 60px; */
+            /* top: 147px; */
+            border-radius: 5px;
+            /* margin: 0 80px 0 80px; */
+            display: grid;
+        }
+
+        .section_1_grid_1 {
+            padding: 100px 0 0 150px;
+            display: grid;
+            grid-template-rows: 1fr 4fr 2fr 2fr;
+            height: 80%;
+        }
+
+        .section_1_grid_1_font1 {
+            font-family: 'Roboto';
+            font-style: normal;
+            /* font-weight: 500; */
+            font-size: 3vw;
+            background: linear-gradient(270deg, #DA5D1A 0%, #FF7D38 97.97%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section_1_grid_1_font2 {
+            font-family: 'Kayak Sans';
+            font-style: normal;
+            font-weight: 600;
+            /* font-size: 61px; */
+            font-size: 6vw;
+            color: #010405;
+        }
+
+        .section_1_grid_1_font3 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            /* font-size: 23px; */
+            font-size: 2.3vw;
+            line-height: 150%;
+            color: #6B6867;
+        }
+
+        .section_1_img {
+            padding: 30px 0 0 0;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            background-image: url("assets/images/sct1_img.png");
+            max-width: 100%;
+            /* height: 72%;
+            object-fit: cover; */
+            /* width: 552px;
+            height: 500px; */
+            /* justify-self: ; */
+            background-color: rgba(251, 127, 255, 0.2);
+            border-radius: 15px;
+        }
+
+        .section_1_img_a1 {
+            padding-left: 10px;
+            grid-area: 1 / 1 / 3 / 3;
+        }
+
+        .section_1_img_a2 {
+            padding-right: 10px;
+            grid-area: 2 / 6 / 3 / 8;
+        }
+
+        .section_1_img_a3 {
+            grid-area: 5 / 2 / 7 / 4;
+        }
+
+        .section_1_img_size {
+            max-width: 100%;
+        }
+
+        .section_1_grid_1_btn {
+            min-width: 120px;
+            height: 57.83px;
+            /* width: 136px;
+            height: 57px; */
+            /* left: 732px;
+            top: 1537px; */
+            background: #DA5D1A;
+            border-radius: 5px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8vw;
+            /* line-height: 150%; */
+            color: #FFFFFF;
+        }
+
+        .section_2 {
+            padding: 20px 0 0 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .section_2_1 {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .section_2_1_font1 {
+            font-family: 'Kayak Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4vw;
+            /* line-height: 130%; */
+            text-align: center;
+            color: #0A0603;
+        }
+
+        .section_2_1_font2 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8vw;
+            line-height: 150%;
+            text-align: center;
+            color: #6B6867;
+        }
+
+        .section_2_2 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .section_2_2_font1 {
+            font-family: 'Kayak Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4vw;
+            /* line-height: 140%; */
+            text-align: center;
+            color: #0A0603;
+        }
+
+        .section_2_2_font2 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8vw;
+            /* line-height: 150%; */
+            text-align: center;
+            color: #6B6867;
+        }
+
+        .section_2_3 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .section_2_4 {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        .section_2_5 {
+            grid-area: 3 / 1 / 4 / 4;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .section_2_btn {
+            width: 136px;
+            height: 57px;
+            left: 732px;
+            top: 1537px;
+            background: #DA5D1A;
+            border-radius: 5px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5vw;
+            /* line-height: 150%; */
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .section_3 {
+            /* padding: 15px 0 0 0; */
+            display: grid;
+            /* display: flex;
+            flex-wrap: wrap; */
+            ;
+            grid-gap: 5px;
+            /* max-width: 1500px; */
+            min-height: 500px;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-rows: 1fr 1fr; */
+            /* justify-items: center; */
+        }
+
+        .section_3_img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        .section_3_1 {
+            grid-area: 1 / 1 / 3 / 3;
+            /* background-image: url("assets/images/1st_image.png"); */
+            /* max-width: 100%; */
+        }
+
+        /* тут и в картинках ниже в этом блоке я специально оставила их повторяющимися и растянутыми на весь экран, потому что не нашла, как сделать, чтобы картинка растягивалась, а если они все будут реального размера, то блок получается некрасивый и маленький по размеру */
+
+        .section_3_2 {
+            grid-area: 1 / 3 / 2 / 5;
+            /* align-self: center; */
+            /* justify-self: start; */
+            /* background-image: url("assets/images/2nd_image.png"); */
+        }
+
+        .section_3_3 {
+            grid-area: 2 / 3 / 3 / 4;
+            /* background-image: url("assets/images/3rd_image.png"); */
+        }
+
+        .section_3_4 {
+            grid-area: 2 / 4 / 3 / 5;
+            /* background-image: url("assets/images/4th_image.png"); */
+        }
+
+        .section_4 {
+            /* padding-left: 50px; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 200px;
+        }
+
+        .section_4_grid_1 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .section_4_grid_1_area1 {
+            grid-area: 1 / 1 / 2 / 4;
+            align-self: center;
+            font-family: 'Kayak Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4vw;
+            /* line-height: 130%; */
+            color: #0A0603;
+        }
+
+        .section_4_grid_1_area2 {
+            grid-area: 2 / 1 / 3 / 4;
+        }
+
+        .section_4_grid_1_area2_grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .section_4_select {
+            max-width: 125px;
+            height: 44px;
+            /* left: 362px;
+            top: 2538px; */
+            background: hwb(21 10% 15%);
+            border-radius: 5px;
+        }
+
+        .section_5 {
+            /* padding: 15px 50px; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            background-color: antiquewhite;
+            justify-items: center;
+        }
+
+        .section_5_font {
+            font-family: 'Roboto';
+            font-style: normal;
+            /* font-weight: 400; */
+            font-size: 2vw;
+            /* line-height: 150%; */
+            text-align: center;
+            color: #0A0603;
+        }
+
+        .section_5_link:hover {
+            background-color: #e9ab8a;
+        }
+
+        .section_5_img {
+            max-width: 100%;
+        }
+
+        .section_6 {
+            padding: 15px 0 0 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .section_6_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 1px solid orange;
+            border-radius: 8px;
+        }
+
+        .section_6_grid_text {
+            /* padding-right: 10px; */
+            align-self: center;
+        }
+
+        .section_6_img {
+            max-width: 100%;
+        }
+
+        .section_6_grid_text_font {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.9vw;
+            line-height: 150%;
+            color: #010405;
+        }
+
+        .footer {
+            padding-top: 15px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            min-height: 200px;
+        }
+
+        .footer_area1 {
+            /* padding-left: 50px; */
+            grid-area: 1 / 1 / 3 / 2;
+        }
+
+        .footer_area1_font1 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8vw;
+            line-height: 150%;
+            color: #6B6867;
+        }
+
+        .footer_area2 {
+            grid-area: 1 / 2 / 3 / 4;
+        }
+
+        .footer_area2_grid {
+            /* padding-right: 50px; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: 30px 30px 30px 30px; */
+            grid-template-rows: 20% 20% 20% 20%;
+            align-items: center;
+            align-content: center;
+            justify-items: end;
+        }
+
+        .footer_area3 {
+            /* padding-left: 50px; */
+            grid-area: 3 / 1 / 4 / 2;
+            align-self: center;
+        }
+
+        .footer_area3_font2 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4vw;
+            /* line-height: 150%; */
+            color: #6B6867;
+        }
+
+        .footer_area4 {
+            grid-area: 3 / 2 / 4 / 4;
+            min-width: 250px;
+            justify-self: end;
+        }
+
+        .footer_area4_grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-content: center;
+        }
+
+        .a_footer:hover {
+            color: #DA5D1A;
+        }
+
+        .a_footer:active {
+            color: aquamarine;
+        }
+
+        @media screen and (min-width: 1024px) {
+
+            .menu_mobile {
+                display: none;
+            }
+
+            .item_middle {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+
+            .menu_mobile {
+                display: none;
+            }
+
+            .section_1 {
+                grid-template-columns: 1fr;
+            }
+
+            .section_1_grid_1 {
+                min-height: 350px;
+            }
+
+            .section_1_img {
+                display: none;
+            }
+
+            .section_4_middle {
+                display: none;
+            }
+
+            .section_5 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .section_5_font {
+                display: none;
+            }
+
+            .section_5_middle {
+                display: none;
+            }
+
+            .footer_area2_grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .a_footer_middle {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width: 767px) {
+
+            .header {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .navigation {
+                display: none;
+            }
+
+            .item_menu_mobile {
+                justify-self: end;
+            }
+
+            .section_1 {
+                display: grid;
+            }
+
+            .section_1_img {
+                display: none;
+            }
+
+            .item_middle {
+                display: none;
+            }
+
+            .section_3 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+
+            .section_3_img_mobile {
+                display: none;
+            }
+
+            .section_4_select_modile {
+                display: none;
+            }
+
+            .section_5 {
+                display: flex;
+            }
+
+            .section_5_font {
+                display: none;
+            }
+
+            .footer_area2_grid {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <object id="logo" data="assets/images/logo.svg" type="image/svg+xml">Fashion</object>
+        <nav class="navigation nav_font">
+            <ul><a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d"
+                    target="_blank">Home</a>
+            </ul>
+            <ul><a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d"
+                    target="_blank">New Collection</a></ul>
+            <ul><a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d"
+                    target="_blank">Winter</a></ul>
+            <ul><a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d1"
+                    target="_blank">Product</a></ul>
+            <button class="button_header">Log In</button>
+        </nav>
+        <div class="item_menu_mobile"><img src="assets/images/sandwitch.png" alt="menu_mob" class="menu_mobile"></div>
+    </header>
+    <main>
+        <section class="section_1">
+            <div class="section_1_grid_1">
+                <div class="section_1_grid_1_font1">New Collection</div>
+                <div class="section_1_grid_1_font2"> Find the new collection in this winter season.</div>
+                <div class="section_1_grid_1_font3">New season and new style only for you in our autumn collection. Fall
+                    in love
+                    with up to 70% off in
+                    Winter collection.</div>
+                <div><button class="section_1_grid_1_btn">Get started</button></div>
+            </div>
+            <div class="item_middle"><img src="assets/images/sct1_img.png" alt="">
+            </div>
+            <div class="section_1_img">
+                <div class="section_1_img_a1"><img src="assets/images/20off.jpg" alt="20OFF" class="section_1_img_size">
+                </div>
+                <div class="section_1_img_a2"><img src="assets/images/easy_del.jpg" alt="Easy delivery"
+                        class="section_1_img_size"></div>
+                <div class="section_1_img_a3"><img src="assets/images/hb.jpg" alt="Haylie Baptista"
+                        class="section_1_img_size"></div>
+            </div>
+        </section>
+        <section class="section_2">
+            <div class="section_2_1 section_2_1_font1">Why you
+                Picking Us.
+                <div class="section_2_1_font2">Winter is the coldest season of the year in polar and temperate zones. It
+                    occurs after autumn and
+                    before
+                    spring each year.</div>
+            </div>
+            <div class="section_2_2 section_2_2_font1">
+                <div><img src="assets/images/free_shipping.png" alt="free_shipping">
+                </div>
+                Free Shipping
+                <div class="section_2_2_font2">The ultimate clothing to see the world in. Be exclusive, Be Devine, Be
+                    yourself.</div>
+            </div>
+            <div class="section_2_3 section_2_2_font1">
+                <div><img src="assets/images/secured_payment.png" alt="secured_payment">
+                </div>
+                Secured Payment
+                <div class="section_2_2_font2">The ultimate clothing to see the world in. Be exclusive, Be Devine, Be
+                    yourself.</div>
+            </div>
+            <div class="section_2_4 section_2_2_font1">
+                <div><img src="assets/images/24_7.png" alt="support_24_7">
+                </div>
+                Support 24/7
+                <div class="section_2_2_font2">The ultimate clothing to see the world in. Be exclusive, Be Devine, Be
+                    yourself.</div>
+            </div>
+            <div class="section_2_5"><button class="section_2_btn">See More</button></div>
+        </section>
+        <section class="section_3">
+            <div class="section_3_1">
+                <img src="assets/images/1st_image.png" alt="1st_image" class="section_3_img">
+            </div>
+            <div class="section_3_2">
+                <img src="assets/images/2nd_image.png" alt="2nd_image" class="section_3_img">
+            </div>
+            <div class="section_3_3"><img src="assets/images/3rd_image.png" alt="3rd_image"
+                    class="section_3_img section_3_img_mobile"></div>
+            <div class="section_3_4">
+                <img src="assets/images/4th_image.png" alt="4th_image" class="section_3_img section_3_img_mobile">
+            </div>
+            </div>
+        </section>
+        <section class="section_4">
+            <div class="section_4_grid_1">
+                <div class="section_4_grid_1_area1">Our Product</div>
+                <div class="section_4_grid_1_area2 section_4_grid_1_area2_grid">
+                    <div>
+                        <select class="section_4_select">
+                            <option value="one">Mens</option>
+                            <option value="two" selected="selected">Womans</option>
+                            <option value="three">Kids</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="section_4_select section_4_select_modile">
+                            <option value="one">Mens</option>
+                            <option value="two" selected="selected">Womans</option>
+                            <option value="three">Kids</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="section_4_select section_4_select_modile">
+                            <option value="one">Mens</option>
+                            <option value="two">Womans</option>
+                            <option value="three" selected="selected">Kids</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="section_4_select section_4_middle">
+                            <option value="one" selected="selected">Mens</option>
+                            <option value="two">Womans</option>
+                            <option value="three">Kids</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </section>
+        <section class="section_5">
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="section_5_link"><img src="assets/images/image.png" alt="Men cotton jacket"
+                    class="section_5_img"></a>
+            <div class="section_5_middle"></div>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="section_5_link"><img src="assets/images/Image-2.png" alt="Winter jacket of red"
+                    class="section_5_img"></a>
+            <p class="section_5_font">Men cotton jacket</p>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="section_5_link"><img src="assets/images/Image-3.png" alt="Kids sweatshirt"
+                    class="section_5_img"></a>
+            <p class="section_5_font">Winter jacket of red</p>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="section_5_link"><img src="assets/images/image-4.png" alt="Kids jacket" class="section_5_img"></a>
+            <p class="section_5_font">Kids sweatshirt</p>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="section_5_link"><img src="assets/images/image-5.png" alt="Women brown coat"
+                    class="section_5_img"></a>
+            <p class="section_5_font">Kids jacket</p>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="section_5_link"><img src="assets/images/image-6.png" alt="Winter fluffy coat"
+                    class="section_5_img"></a>
+            <p class="section_5_font">Women brown coat</p>
+            <div></div>
+            <p class="section_5_font">Winter fluffy coat</p>
+        </section>
+        <section class="section_6">
+            <div class="section_6_grid">
+                <div>
+                    <img src="assets/images/sct6_1.png" alt="man" class="section_6_img">
+                </div>
+                <div class="section_6_grid_text section_6_grid_text_font">
+                    New season and new style only for you in our autumn col up to 70% off in Winter collection.
+                    Jakob Mango
+                </div>
+            </div>
+            <div class="section_6_grid">
+                <div>
+                    <img src="assets/images/sct6_2.png" alt="woman" class="section_6_img">
+                </div>
+                <div class="section_6_grid_text section_6_grid_text_font">
+                    New season and new style only for you in our autumn col up to 70% off in Winter collection.
+                    Haylie Saris
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_area1"><img src="assets/images/logo.svg" alt="logo">
+            <p class="footer_area1_font1">Our fashion generator will help you come
+                up with the best ideas.</p>
+        </div>
+        <div class="footer_area2 footer_area2_grid">
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer">Menu</a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer">Company</a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer">Help</a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer">About</a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer">Support</a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer">Privacy policy</a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer a_footer_middle">Service</a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer a_footer_middle">Service</a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer a_footer_middle">Delivery service</a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer a_footer_middle">Marker</a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer a_footer_middle">Contact</a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank"
+                class="a_footer a_footer_middle">Terms & Conditions</a>
+        </div>
+        <div class="footer_area3 footer_area3_font2">Copyright © 2021 Fashion, All rights reserved.</div>
+        <div class="footer_area4 footer_area4_grid">
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d" target="_blank">
+                <img src="assets/images/facebook.png" alt="facebook"></a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d"
+                target="_blank"><img src="assets/images/twiter.png" alt="twitter"></a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d"
+                target="_blank"><img src="assets/images/instragram.png" alt="instagram"></a>
+            <a href="https://itgirlschool.notion.site/itgirlschool/6-04ea6e832962444886b688ce30372f4d"
+                target="_blank"><img src="assets/images/linkdin.png" alt="linkdin"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
